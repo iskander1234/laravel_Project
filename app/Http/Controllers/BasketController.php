@@ -42,7 +42,6 @@ class BasketController extends Controller
         return view('order', compact('order'));
     }
 
-
     public function basketAdd($productId){
         $orderId = session('orderId');
         if(is_null($orderId)){
